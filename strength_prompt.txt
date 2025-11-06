@@ -1,0 +1,8 @@
+** Resume strength evaluation 
+
+Analyze the resume provided and identify the candidate's 3 main strengths. 
+For each strength, include:
+- Skill
+- Evidence from the resume (example or experience)
+
+Focus on technical, professional, and soft skills.

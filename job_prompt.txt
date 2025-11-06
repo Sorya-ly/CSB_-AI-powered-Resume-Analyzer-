@@ -1,0 +1,9 @@
+** The most suitable jobs title for the candidate
+
+Analyze the resume provided and suggest 3 suitable job positions for the candidate. 
+For each job, provide:
+- Job title
+- Job description (brief)
+- Fit score (1-10) based on how well the candidate matches the role
+
+Do not include anything else.

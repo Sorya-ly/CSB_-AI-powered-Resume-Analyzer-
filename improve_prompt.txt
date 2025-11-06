@@ -1,0 +1,9 @@
+** Some improvements on the resume
+
+Analyze the resume provided and suggest improvements to make it stronger. 
+For each suggestion, include:
+- Area (e.g., skills, experience, formatting)
+- Specific suggestion or advice
+- Optional: recommended courses or resources to improve that skill
+
+Keep suggestions concise and actionable.
