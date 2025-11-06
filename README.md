@@ -34,3 +34,10 @@ Hash Maps / Dictionaries: We can use this to match the user’s skills and exper
 Priority Queues: We can use this to sort and rank job recommendations by relevancy in accordance with the user’s skill set and past experiences. 
  
 ### c. Data manipulation
+Data manipulation involves preparing, cleaning, and transforming the user’s resume data into a format that can be effectively analyzed by the system. Since resumes can come in different formats (PDF, Word, or text), this step ensures consistency and usability of data before analysis. The process includes:
+Data Extraction:
+Extracting text content from uploaded files (PDF, Word, or plain text) using parsing libraries (e.g., PyMuPDF, python-docx, or PDFMiner). This step identifies key sections such as personal information, education, experience, and skills.
+Data Cleaning:
+Removing unnecessary characters, symbols, and formatting issues. This includes fixing spacing, converting to lowercase, and standardizing terminology (e.g., “C++ Developer” and “Software Engineer” both categorized as "Tech roles").
+Data Transformation:
+Structuring the extracted information into a uniform format, such as JSON or a database schema, to make it easier for machine learning algorithms to process.
