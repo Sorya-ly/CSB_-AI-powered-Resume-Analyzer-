@@ -1,0 +1,8 @@
+{
+  "Data Scientist": ["Python", "Machine Learning", "Pandas", "Numpy", "TensorFlow"],
+  "Web Developer": ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+  "Mobile Developer": ["Java", "Kotlin", "Swift", "Flutter"],
+  "DevOps Engineer": ["Docker", "Kubernetes", "CI/CD", "AWS", "Linux"],
+  "UI/UX Designer": ["Figma", "Adobe XD", "Photoshop", "Wireframing"],
+  "Backend Developer": ["Java", "Spring Boot", "SQL", "REST API", "Hibernate"]
+}
