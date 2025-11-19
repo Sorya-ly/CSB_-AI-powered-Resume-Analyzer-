@@ -45,6 +45,7 @@ def main():
     except Exception as e:
         print("❌ Error:", e)
     
+
     #QnA with the recruiter 
     while True: 
         print("-------------------------------------------")
