@@ -52,26 +52,38 @@ def QnA_analyzer (token, resume_text=None):
     
     model = genai.GenerativeModel("gemini-2.5-flash")
 
-    prompt = f"""
-    You are an assistant that MUST base all answers ONLY on the resume and optional job description below.
-    Do NOT invent experience or skills that are not present in the resume.
-    If information is missing, say so briefly.
+    """
+    Smart chatbot for resume Q&A.
+    
+    user_question: The user's question (string)
+    resume_text: Optional - The user's resume (string)
+    previous_summary: Optional - The AI summary from analyze_resume()
+    """
 
-    Resume:
+    # Build prompt
+    prompt = f"""
+    You are a career assistant AI specialized in resume improvement, job matching,
+    skill development, interview preparation, and career guidance.
+
+    The user may ask questions about:
+    - Resume improvements
+    - Skills to learn
+    - Job fit and recommendations
+    - Interview questions
+    - Career growth
+    - ATS optimization
+
+    Provide clear, direct, helpful answers.
+
+    User Resume (if available):
     {resume_text}
 
-    """
-        
-    prompt += f"""
     User question:
     {token}
 
-    Instructions:
-    - Use only the resume (and job description if provided) to answer.
-    - Be concise, factual, and cite the exact resume line or phrase you used as evidence when applicable.
-    - If the resume lacks the information needed to answer, respond: "Information not present in resume."
-    Now generate the answer.
+    Provide the best possible answer.
     """
-    answer = model.generate_content(prompt)
-    return answer.text.strip()
-    
+
+    # Generate AI response
+    response = model.generate_content(prompt)
+    return response.text.strip()
