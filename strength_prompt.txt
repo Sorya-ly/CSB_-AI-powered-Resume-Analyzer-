@@ -1,4 +1,4 @@
-** Resume strength evaluation 
+** Resume strength evaluation:
 
 Analyze the resume provided and identify the candidate's 3 main strengths. 
 For each strength, include:
